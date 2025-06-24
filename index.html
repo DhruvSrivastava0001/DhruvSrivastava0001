@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Srivastava | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #1e1e1e;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    header h1 {
+      color: #00adb5;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 300;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .section h2 {
+      color: #00adb5;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #1e1e1e;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background: #242424;
+    }
+
+    .project-card h3 {
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: #bbbbbb;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .skill {
+      background: #2a2a2a;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: #00adb5;
+      transition: background 0.3s ease;
+    }
+
+    .skill:hover {
+      background: #00adb5;
+      color: #000;
+    }
+
+    .contact-section {
+      line-height: 1.7;
+    }
+
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dhruv Srivastava</h1>
+    <a href="#interests">Interests</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  
+    <section id="interests" class="section">
+      <h2>Career Interests</h2>
+      <p>While I enjoy building intuitive and responsive web applications, I’m equally drawn to the world of management. My long-term vision combines technical excellence with leadership in tech-driven teams, where I can contribute not just through code, but also through planning, communication, and strategy.</p>
+    </section>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I’m a passionate web developer focused on creating beautiful, functional, and accessible web experiences. Alongside my tech skills, I also have a keen interest in the field of management, combining creativity with strategy to build impactful digital products and lead meaningful projects.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Smart Meeting Scheduler</h3>
+          <p>Calendar-based scheduler app using JavaScript, with auto-reminders and animated transitions.</p>
+        </div>
+        <div class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>Weather tracker using OpenWeather API, speech input, and animated weather icons.</p>
+        </div>
+        <div class="project-card">
+          <h3>Facial Expression Recognition</h3>
+          <p>Built with Python & OpenCV, it detects emotional expressions with real-time feedback animations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">API Integration</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Responsive Design</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Contact Info</h2>
+      <p><strong>Email:</strong> srivastavdhruv123@gmail.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/DhruvSrivastava0001" style="color: #00adb5;">@DhruvSrivastava0001</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/dhruvsrivastava0001" style="color: #00adb5;">linkedin.com/in/dhruvsrivastava0001</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Dhruv Srivastava. All rights reserved.
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
