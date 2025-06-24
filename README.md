@@ -1,4 +1,4 @@
-# 💼 Dhruv Srivastava | Responsive Dark Portfolio
+# 💼 Dhruv Srivastava | Personal Portfolio
 
 A fully responsive and aesthetically designed **portfolio website** built using **HTML, CSS, and JavaScript**, showcasing my technical projects, skills, and dual interests in web development and tech-driven management.
 
